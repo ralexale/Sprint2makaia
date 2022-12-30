@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="image/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>sprint2</title>
+  </head>
+  <body>
+    <main class="main_container">
+      <section class="fondo">
+        <div class="tarjeta">
+          <img class="logo" src="image/card-logo.svg" alt="logo" />
+          <p class="numero">0000 0000 0000 0000</p>
+          <div class="texto_tarjeta">
+            <p class="name">Hector Montaña</p>
+            <p><span class="month">00</span>/<span class="year">00</span></p>
+          </div>
+        </div>
+        <div class="tarjeta_atras">
+          <p class="cvc">000</p>
+        </div>
+      </section>
+      <section class="formulario">
+        <form class="main_form">
+          <label class="input_label" for="Cardholder">CARDHOLDER NAME</label>
+          <input
+            class="input_form"
+            type="text"
+            name="Cardholder"
+            id="Cardholder"
+            maxlength="20"
+            placeholder="e.g Jane Appleseed"
+          />
+          <div class="cardholder--error error"></div>
+          <label class="input_label" for="Cardnumber">CARD NUMBER</label>
+          <input
+            class="input_form"
+            type="text"
+            name="Cardnumber"
+            id="Cardnumber"
+            maxlength="19"
+            placeholder="e.g 1234 5678 9123 0000"
+          />
+          <div class="cardnumber--error error"></div>
+          <div class="date_cvc_container">
+            <label class="input_label" for="moth year">EXP. DATE (MM/YY)</label>
+            <label class="input_label" for="cvc">CVC</label>
+            <div class="inputs_date">
+              <input
+                class="input_form"
+                type="text"
+                name="moth_year"
+                id="inputMonth"
+                maxlength="2"
+                placeholder="MM"
+              />
+              <input
+                class="input_form"
+                type="text"
+                name="moth_year"
+                id="inputYear"
+                maxlength="2"
+                placeholder="YY"
+              />
+            </div>
+            <input
+              class="input_form"
+              type="text"
+              name="cvc"
+              id="inputCvc"
+              maxlength="3"
+              placeholder="e.g 123"
+            />
+            <div class="errors_container">
+              <div class="mm--error error"></div>
+              <div class="yy--error error"></div>
+            </div>
+            <div class="container_cvc--error error"></div>
+          </div>
+          <input class="input_submit" type="submit" value="Confirm" />
+        </form>
+
+        <section class="thanks_section">
+          <img
+            class="icon_complete"
+            src="image/icon-complete.svg"
+            alt="icon-complete"
+          />
+          <h1 class="title">Thank you!</h1>
+          <p class="added">we've added your card details</p>
+          <button class="button" onclick="location.href = location.href">
+            Continue
+          </button>
+        </section>
+      </section>
+    </main>
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
+</html>

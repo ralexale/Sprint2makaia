@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+.main_container {
+  width: 375px;
+  margin: auto;
+}
+.main_container .fondo {
+  background-image: url("../image/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  height: 240px;
+  position: relative;
+}
+.main_container .formulario {
+  padding: 90px 24px 45px;
+}
+@media (min-width: 1440px) {
+  .main_container {
+    width: 1440px;
+    display: flex;
+  }
+  .main_container .fondo {
+    background-image: url("../image/bg-main-desktop.png2");
+    width: 900px;
+    height: 900px;
+  }
+}
+@media (min-width: 1024px) {
+  .main_container {
+    width: 1440px;
+    display: flex;
+  }
+  .main_container .fondo {
+    background-image: url("../image/bg-main-desktop.png");
+    width: 800px;
+    height: 700px;
+  }
+}
+
+.tarjeta {
+  width: 288px;
+  height: 160px;
+  border-radius: 10px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  background-image: url("../image/bg-card-front.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 126px;
+  left: 18px;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+@media (min-width: 1440px) {
+  .tarjeta {
+    width: 450px;
+    height: 247px;
+    padding: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .tarjeta {
+    top: 187px;
+    left: 167px;
+  }
+}
+.tarjeta .logo {
+  width: 55px;
+  margin-bottom: 30px;
+}
+.tarjeta .numero {
+  margin-bottom: 15px;
+}
+.tarjeta .texto_tarjeta {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+@media (min-width: 1440px) {
+  .tarjeta .logo {
+    width: 86px;
+    margin-bottom: 55px;
+  }
+  .tarjeta .numero {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .tarjeta .texto_tarjeta {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1024px) {
+  .tarjeta {
+    position: absolute;
+    top: 100px;
+    left: 280px;
+    background-size: cover;
+    width: 380px;
+    height: 200px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1440px) {
+  .tarjeta {
+    top: 187px;
+    left: 167px;
+  }
+}
+@media (min-width: 1024px) {
+  .tarjeta .logo {
+    width: 60px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .tarjeta .numero {
+    font-size: 20px;
+    margin-bottom: 35px;
+  }
+}
+@media (min-width: 1024px) {
+  .tarjeta .texto_tarjeta {
+    font-size: 14px;
+  }
+}
+
+.tarjeta_atras {
+  width: 288px;
+  height: 160px;
+  border-radius: 10px;
+  color: hsl(0deg, 0%, 100%);
+  padding: 20px;
+  background-image: url("../image/bg-card-back.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 30px;
+  left: 75px;
+  letter-spacing: 2px;
+}
+@media (min-width: 1440px) {
+  .tarjeta_atras {
+    width: 450px;
+    height: 247px;
+    padding: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .tarjeta_atras {
+    top: 458px;
+    left: 257px;
+  }
+}
+.tarjeta_atras .cvc {
+  font-size: 14px;
+  margin-top: 50px;
+  text-align: right;
+  padding-right: 10px;
+}
+@media (min-width: 1024px) {
+  .tarjeta_atras .cvc {
+    margin-top: 72px;
+    font-size: 18px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .tarjeta_atras {
+    padding-right: 20px;
+  }
+  .tarjeta_atras .cvc {
+    margin-top: 62px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .tarjeta_atras {
+    background-size: cover;
+    width: 380px;
+    height: 200px;
+    position: absolute;
+    top: 350px;
+    left: 350px;
+  }
+}
+@media (min-width: 1024px) and (min-width: 1440px) {
+  .tarjeta_atras {
+    top: 458px;
+    left: 257px;
+  }
+}
+
+.formulario .input_label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 8px;
+  color: hsl(278deg, 68%, 11%);
+  font-weight: bold;
+}
+.formulario .input_form {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  font-family: "Space Grotesk", sans-serif;
+  border: 1px solid hsl(270deg, 3%, 87%);
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.formulario .input_form::placeholder {
+  color: hsl(270deg, 3%, 87%);
+}
+.formulario .date_cvc_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 16px;
+}
+.formulario .date_cvc_container .inputs_date {
+  display: flex;
+  gap: 10px;
+}
+.formulario .input_submit, .formulario .thanks_section .button, .thanks_section .formulario .button {
+  background-color: hsl(278deg, 68%, 11%);
+  color: hsl(270deg, 3%, 87%);
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 1;
+  font-family: "Space Grotesk", sans-serif;
+}
+.formulario .input_submit:hover, .formulario .thanks_section .button:hover, .thanks_section .formulario .button:hover {
+  cursor: pointer;
+}
+@media (min-width: 1440px) {
+  .formulario {
+    width: 385px;
+    margin-top: 180px;
+  }
+  .formulario .input_form {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .formulario {
+    width: 385px;
+    margin-top: 100px;
+  }
+  .formulario .input_form {
+    margin-bottom: 40px;
+  }
+}
+
+.error {
+  color: hsl(0deg, 100%, 66%);
+  margin: -10px 0 18px;
+  font-size: 12px;
+}
+
+.errors_container {
+  display: flex;
+  gap: 5px;
+}
+.errors_container div {
+  width: 100px;
+  text-align: center;
+}
+
+.thanks_section {
+  display: none;
+}
+.thanks_section .icon_complete {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.thanks_section .title {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 4;
+  color: hsl(278deg, 68%, 11%);
+  margin-bottom: 24px;
+}
+.thanks_section .added {
+  text-align: center;
+  color: hsl(279deg, 6%, 55%);
+}
+.thanks_section .button {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */

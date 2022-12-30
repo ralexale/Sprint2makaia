@@ -1,0 +1,33 @@
+@use 'inicial';
+
+.main_container {
+  width: 375px;
+  margin: auto;
+  .fondo {
+    background-image: url('../image/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    height: 240px;
+    position: relative;
+  }
+  .formulario {
+    padding: 90px 24px 45px;
+  }
+  @media (min-width: 1440px) {
+    width: 1440px;
+    display: flex;
+    .fondo {
+      background-image: url('../image/bg-main-desktop.png2');
+      width: 900px;
+      height: 900px;
+    }
+  }
+  @media (min-width: 1024px) {
+    width: 1440px;
+    display: flex;
+    .fondo {
+      background-image: url('../image/bg-main-desktop.png');
+      width: 800px;
+      height: 700px;
+    }
+  }
+}

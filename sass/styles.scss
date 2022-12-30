@@ -1,0 +1,31 @@
+@use 'variables';
+@use 'inicial';
+@use 'main';
+@use 'mixins';
+@use 'tarjetas';
+@use 'formulario';
+
+.thanks_section {
+  display: none;
+  .icon_complete {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4;
+    color: variables.$Very-dark-violet;
+    margin-bottom: 24px;
+  }
+  .added {
+    text-align: center;
+    color: variables.$Dark-grayish-violet;
+  }
+  .button {
+    @extend .input_submit;
+    margin-top: 40px;
+  }
+}

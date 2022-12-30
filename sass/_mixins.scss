@@ -1,0 +1,29 @@
+@use 'variables';
+
+@mixin tarjeta($url) {
+  width: 288px;
+  height: 160px;
+  border-radius: 10px;
+  color: variables.$White;
+  padding: 20px;
+  background: {
+    image: url($url);
+    repeat: no-repeat;
+    size: contain;
+  }
+  @media (min-width: 1440px) {
+    width: 450px;
+    height: 247px;
+    padding: 30px;
+  }
+}
+
+@mixin posicion_tarjetas($m_top, $m_left, $d_top, $d_left) {
+  position: absolute;
+  top: $m_top;
+  left: $m_left;
+  @media (min-width: 1440px) {
+    top: $d_top;
+    left: $d_left;
+  }
+}
